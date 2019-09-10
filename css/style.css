@@ -16,6 +16,9 @@ input, textarea{
     width: 100%;
     margin: 0;
 }
+section{
+    height: 100vh;
+}
 
 /* CLASSES */
 .section-padding{
@@ -33,6 +36,8 @@ input, textarea{
     width: 100%;
     display: block;
     border-radius: 0%;
+    width: 380px;
+    height: 300px;
 }
 
 .color-blue{
@@ -65,7 +70,6 @@ input, textarea{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 100vh;
 }
 
 .hero-text {
