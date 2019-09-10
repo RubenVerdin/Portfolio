@@ -118,8 +118,9 @@ section{
     left: 0;
     z-index: -1;
 }
-.line80:after{ max-width: 80%; }
+.line60:after{ max-width: 60%; }
 .line70:after{ max-width: 70%; }
+.line80:after{ max-width: 80%; }
 .line90:after{ max-width: 90%; }   
 .me{
     width: 50%;

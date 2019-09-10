@@ -1,7 +1,7 @@
 // FILTER OF THE PROJECTS
 filterSelection("all");
 function filterSelection(c) {
-  var x, i;
+  let x, i;
   x = document.getElementsByClassName("filterDiv");
   if (c == "all") c = "";
   
@@ -12,7 +12,7 @@ function filterSelection(c) {
 }
 
 function AddClass(element, name) {
-  var i, arr1, arr2;
+  let i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
@@ -21,7 +21,7 @@ function AddClass(element, name) {
 }
 
 function RemoveClass(element, name) {
-  var i, arr1, arr2;
+  let i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
   for (i = 0; i < arr2.length; i++) {
@@ -31,17 +31,6 @@ function RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
-//Add active class to the current button (highlight it)
-// var btnContainer = document.getElementById("myBtnContainer");
-// var btns = btnContainer.getElementsByClassName("btn");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function(){
-//     var current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//   });
-// }
 
 // MODAL - GALLERY IMAGE CODE
 let slideIndex = 1;
@@ -85,3 +74,9 @@ function animateOnSight(before, after) {
   }
 
 }//animateOnSight
+
+// View More Hero Button
+function ViewMoreButton(){
+  let section1 = document.getElementById("about");
+  document.documentElement.scrollTop  = section1.offsetTop;
+}

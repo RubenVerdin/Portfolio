@@ -15,16 +15,16 @@
       <div class="hero-text center-in-container">
           <h1 class="mb-5">Hello, <b class="color-red">I'm Ruben Verdin.</b><br>
              I'm a full-stack developer</h1>
-          <a class="mybtn">View More</a>
+          <button class="mybtn" onclick="ViewMoreButton()">View More</button>
       </div>
     </section>
 
     <!-- ABOUT -->
-    <section class="hidden section-padding">
+    <section class="hidden section-padding" id="about">
       <div class="container">
           <div class="text-center my-5">
             <h1 class="font-weight-bold">ABOUT ME</h1>
-            <p class="color-blue my-4 font-weight-bold">Back end focus with Full-stack experience.</p>     
+            <p class="color-blue mb-4 font-weight-bold">Back end focus with Full-stack experience.</p>     
           </div>
           <div class="row">
             <div class="col-sm-5">
@@ -32,7 +32,7 @@
               <div class="text-center">
                 <h5 class="mt-2 mb-4">Want to know about me?</h5>
                 <p>Graduated from Niagara College from the Computer Programming Program. 
-                  I have great experience with Back-End development, specially using .NET and Python. 
+                  I have great experience with Back-End development, specially using NET. 
                   Although I have a front end experience thanks to my freelance work.</p>
               </div>
             </div>
@@ -43,13 +43,15 @@
               <h6>Bootstrap</h6>
               <div class="line line80">80%</div>
               <h6>Wordpress</h6>
-              <div class="line line80">80%</div>
+              <div class="line line60">60%</div>
               <h6>Javascript</h6>
               <div class="line line70">70%</div>
               <h6>.NET</h6>
               <div class="line line90">90%</div>
+              <h6>Node</h6>
+              <div class="line line80">80%</div>
               <h6>Python</h6>
-              <div class="line line90">90%</div>
+              <div class="line line60">60%</div>
             </div>
           </div>
         </div>
@@ -63,9 +65,9 @@
           <div class=" col-md-6">
             <div id="myBtnContainer" class="my-4 text-center">
               <button class="btn active" onclick="filterSelection('all')">ALL</button>
-              <button class="btn " onclick="filterSelection('net')">.NET</button>
+              <button class="btn " onclick="filterSelection('backend')">Back-End</button>
+              <button class="btn " onclick="filterSelection('frontend')">Front-End</button>
               <button class="btn " onclick="filterSelection('wordpress')">WordPress</button>
-              <button class="btn " onclick="filterSelection('html')">HTML / CSS</button>
             </div>
           </div>
         </div>
@@ -73,7 +75,7 @@
         <!-- Project Row -->
         <div class="row py-4">
           <!-- Project 1 -->
-          <div class="filterDiv show html net col-sm-4 p-0 ">         
+          <div class="filterDiv show backend frontend col-sm-4 p-0 ">         
             <div class="">
               <div class="project">
                 <a href="#"><img src="images/thumb-1.jpg" class="card-img"></a>
@@ -87,7 +89,7 @@
             </div>
           </div>
           <!-- Project 2 -->
-          <div class="filterDiv html show col-sm-4 p-0 ">
+          <div class="filterDiv frontend show col-sm-4 p-0 ">
               <div class="">
                   <div class="project">
                     <a href="#"><img src="images/thumb-2.jpg" class="card-img"></a>
