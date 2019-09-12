@@ -16,9 +16,7 @@ input, textarea{
     width: 100%;
     margin: 0;
 }
-section{
-    height: 100vh;
-}
+
 
 /* CLASSES */
 .section-padding{
@@ -70,6 +68,7 @@ section{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    height: 100vh;
 }
 
 .hero-text {
