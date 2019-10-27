@@ -34,8 +34,8 @@ input, textarea{
     width: 100%;
     display: block;
     border-radius: 0%;
-    width: 380px;
-    height: 300px;
+    /* width: 380px;
+    height: 300px; */
 }
 
 .color-blue{
